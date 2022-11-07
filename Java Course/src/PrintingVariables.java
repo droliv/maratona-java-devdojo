@@ -10,7 +10,7 @@ public class PrintingVariables {
         System.out.println("float variable priceFloat value: " + priceFloat);
         boolean trueValue = true;
         System.out.println("boolean variable trueValue value: " + trueValue);
-        char character = 'a';
+        char character = 'a'; //2 bytes aceita caracters ou números inteiros que são traduzidos para a tabela unicode.
         System.out.println("char variable character value: " + character);
         byte ageByte = 36;
         System.out.println("byte variable age value: " + ageByte);
