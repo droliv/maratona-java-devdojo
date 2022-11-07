@@ -1,3 +1,5 @@
+package br.com.javacourse.introduction;
+
 //Um Hello World pra não perder o hábito
 public class Main {
     public static void main(String[] args) {

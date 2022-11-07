@@ -1,3 +1,5 @@
+package br.com.javacourse.introduction;
+
 public class PrintingVariables {
     public static void main(String[] args){
         System.out.println("Imprimindo váriáveis");
