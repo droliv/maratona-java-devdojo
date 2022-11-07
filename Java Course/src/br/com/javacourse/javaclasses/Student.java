@@ -1,14 +1,46 @@
 package br.com.javacourse.javaclasses;
 
 public class Student {
-    public String name;
-    public String enrollment;
-    public int age;
+    private String name;
+    private String enrollment;
+    private int age;
 
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setEnrollment(String enrollment){
+        this.enrollment = enrollment;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getEnrollment(){
+        return this.enrollment;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
     public void printStudentData(){
-        System.out.println(this.name);
-        System.out.println(this.enrollment);
-        System.out.println(this.age);
+        System.out.println(this.getName());
+        System.out.println(this.getEnrollment());
+        System.out.println(this.getAge());
+    }
+
+    public void init(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    // Sobrecarga de método
+    public void init(String name, String enrollment, int age){
+        init(name, age);
+        this.enrollment = enrollment;
     }
 
 
