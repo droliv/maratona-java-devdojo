@@ -17,6 +17,9 @@ public class StudentTest {
         Student student3 = new Student();
         student3.init("Louise", "54321", 19);
         System.out.println(student3.getName());
+
+        Student student4 = new Student("Peter", "123678", 23);
+        System.out.println(student4.getName());
         student1.printStudentData();
         student2.printStudentData();
 

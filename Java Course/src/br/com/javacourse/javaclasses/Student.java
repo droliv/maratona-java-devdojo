@@ -5,6 +5,20 @@ public class Student {
     private String enrollment;
     private int age;
 
+    public Student(){
+
+    }
+    public Student(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    // sobrecarga de construtor
+    // construtor só pode ser chamado por outro construtor
+    public Student(String name, String enrollment, int age){
+        this(name, age);
+        this.enrollment = enrollment;
+    }
     public void setName(String name) {
         this.name = name;
     }
